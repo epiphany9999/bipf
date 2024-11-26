@@ -2028,7 +2028,7 @@ a:hover, a:active {
   z-index: 2;
 }
 #dsn_header.header-normal {
-  padding-top: 180px;
+  padding-top: 120px;
 }
 @media only screen and (min-width: 768px) {
   #dsn_header.header-normal .title:not(.title-org) {
@@ -3005,7 +3005,7 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 992px) {
   .root-blog .blog-item .left-box {
-    flex: 0 1 40%;
+    flex: 0 1 50%;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -3015,8 +3015,8 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 992px) {
   .root-blog .blog-item .right-box {
-    flex: 0 1 60%;
-    padding-left: 30px;
+    flex: 0 1 70%;
+    padding-left: 10px;
   }
 }
 

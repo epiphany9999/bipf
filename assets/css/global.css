@@ -590,6 +590,19 @@ h6, .h6 {
     font-size: 45px;
     line-height: 55px;
   }
+  .d-grid {
+    .p-50 {
+      padding: 20px !important;
+    }
+    .service_description p {
+      font-size: 16px !important;
+      color: #888;
+    }
+  }
+}
+.service_description p {
+  font-size: 16px !important;
+  color: #888;
 }
 
 .title {
@@ -1003,6 +1016,12 @@ a:focus {
 
 .h-v-80 {
   height: 80vh;
+}
+.h-v-50 {
+  height: 50vh;
+}
+.h-v-30 {
+  height: 30vh;
 }
 
 [data-overlay]:before, [data-dsn-overlay]:before {
@@ -2024,6 +2043,10 @@ a:focus {
 .max-w750 {
   max-width: 750px;
 }
+.max-w1000 {
+  max-width: 1000px;
+  text-align: center;
+}
 
 .max-w350 {
   max-width: 350px;
@@ -2342,8 +2365,8 @@ a:focus {
   position: relative;
   overflow: hidden;
 }
-[data-dsn-grid=move-up]:not(.h-v-80),
-[data-dsn-grid=moveUp]:not(.h-v-80) {
+[data-dsn-grid=move-up]:not(.h-v-50),
+[data-dsn-grid=moveUp]:not(.h-v-50) {
   height: 100vh;
 }
 .container [data-dsn-grid=move-up],
