@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 @font-face {
@@ -1970,7 +1970,7 @@ a:hover, a:active {
 }
 @media only screen and (min-width: 768px) {
   #dsn_header:not(.header-normal, .header-padding, .dsn-full-header) .entry-header, #dsn_header:not(.header-normal, .header-padding, .dsn-full-header) #hero_content {
-    min-height: calc(100vh - (var(--margin-padding) * 2));
+    min-height: calc(100vh - (20px * 2));
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2034,6 +2034,7 @@ a:hover, a:active {
   #dsn_header.header-normal .title:not(.title-org) {
     --title-heading: 60px;
   }
+
 }
 #dsn_header.dsn-full-header {
   padding: 0;
@@ -2045,6 +2046,7 @@ a:hover, a:active {
   padding-top: var(--margin-padding);
   padding-bottom: var(--margin-padding);
 }
+
 
 .dsn-scroll-bottom {
   position: absolute;
@@ -2948,9 +2950,10 @@ a:hover, a:active {
   transition: all 0.3s ease-in-out;
   letter-spacing: 2px;
   text-transform: uppercase;
+  background-color: #252525;
 }
 .filtering-t .filtering-wrap .filtering button:not(:last-of-type):after {
-  content: "/";
+  content: "";
   position: absolute;
   margin: 0 2px;
   color: var(--heading-color);
@@ -2961,8 +2964,13 @@ a:hover, a:active {
 @media only screen and (max-width: 575px) {
   .filtering-t .filtering-wrap .filtering button {
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 1px;
     margin: 0 10px 10px 0;
+    font-size: 14px;
+  }
+  .dsn-filtering {
+    display: flex;
+    margin-top: 5px;
   }
 }
 
@@ -3419,10 +3427,11 @@ form:not(.submitting) .wpcf7-spinner {
   float: left;
   margin: 0;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 30px;
 }
 .comments-post .comments-area .comment .comment-body .comment-text .text-holder p {
   margin: 7px 0 10px;
+
 }
 .comments-post .comments-area .comment .comment-body .comment-text .comment-reply-link {
   position: relative;
@@ -4654,7 +4663,7 @@ ul.intro-project-list li h5.title-list-project + p.description-list-project {
 }
 @media only screen and (min-width: 992px) {
   .dsn-resume .resume-item:not(:last-of-type) {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
